@@ -1,0 +1,14 @@
+a=10
+b=20
+c=a+b
+print(c)   #it is a low cohesion value
+
+d=input()
+e=input()
+f=d+e
+print(f)   #in this if we give two numbers for d and e then the outcome will come as a concatenated value
+
+g=int(input("enter a value"))
+h=int(input("enter a value"))
+i=g+h
+print(i)   #in this method the user can enter the value whatever means user input
