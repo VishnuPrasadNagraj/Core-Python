@@ -1,0 +1,21 @@
+class charger:
+    def __init__(self,name):
+        self.name=name
+    def get_charger (self):
+        print("charger is ready")
+
+class mobile:
+    def __init__(self,name):
+        self.mname=name
+        self.c=" "
+    def has_mobile (self,p):
+        self.c=p
+m1=mobile("vivo")
+c1=charger("vivo charger")
+m1.has_mobile(c1)
+print(m1.c.name)
+m1.c.get_charger()
+del m1
+print(c1.name)
+c1.get_charger()
+
