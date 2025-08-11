@@ -1,0 +1,7 @@
+char=input("enter a ascii value")
+res=ord(char)
+print(res)
+
+num=int(input("enter a number"))
+res1=chr(num)
+print(res1)
