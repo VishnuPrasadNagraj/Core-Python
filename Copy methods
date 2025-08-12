@@ -1,0 +1,32 @@
+#shallow copy
+l=[10,20,30,40]
+print(l)
+l1=l
+print(l)
+print(l1)
+l[3]=420
+print(l)
+print(l1)
+
+#deep copy
+l=[10,20,30,40]
+print(l)
+l1=l.copy()
+
+l=[10,20,30,["kalyan","varun"],40]
+print(l)
+l1=l.copy()
+print(l)
+del l[3][1]
+print(l)
+print(l1)
+
+#achive deep copy in a nested list
+import copy
+l=[10,20,30,["kalyan","varun"],40]
+print(l)
+l1=copy.deepcopy(l)
+print(l)
+del l[3][1]
+print(l)
+print(l1)
