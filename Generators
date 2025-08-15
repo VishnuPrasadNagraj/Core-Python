@@ -1,0 +1,10 @@
+def generator():
+    yield 1
+    yield 2
+    yield 3
+res = generator()  #creating object for generators
+print(res)  #addr
+print(next(res))
+print(next(res))
+print(next(res))
+print(next(res)) #it will throw an error
