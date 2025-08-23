@@ -1,0 +1,24 @@
+import time
+from threading import Thread
+class task1(Thread):
+    def run(self):
+        l=['adi','vijay','vishnu']
+        for i in l:
+            print(i)
+            time.sleep(5)
+class task2(Thread):
+    def run(self):
+        for i in range(6):
+            print(i)
+            time.sleep(2)
+class task3(Thread):
+    a=10
+    b=20
+    c=a+b
+    print(c)
+t1=task1()
+t2=task2()
+t3=task3()
+t1.start()
+t2.start()
+t3.start()
